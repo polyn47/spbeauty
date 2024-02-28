@@ -10,7 +10,7 @@ const Option = styled.div`
 
 function ListElement(props) {
     return (
-        <div className='d-inline-flex flex-row align-items-center'>
+        <div className='d-inline-flex flex-row align-items-center align-self-stret'>
             <Option className='flex-grow-1 py-3'>{props.children}</Option>
             <div className='d-inline-flex flex-row gap-1'>
             <IconOnlyButton minWidth='28' icon={<EditIcon/>}/>
