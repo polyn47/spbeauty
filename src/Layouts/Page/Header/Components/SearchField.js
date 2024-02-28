@@ -19,7 +19,6 @@ const Input = styled.input`
         opacity: 0.8;
     }
     &:focus {
-        background: white;
     }
 `;
 
