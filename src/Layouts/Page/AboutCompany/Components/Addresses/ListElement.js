@@ -4,19 +4,21 @@ import RemoveIcon from '../../../../../Icons/RemoveIcon';
 import IconOnlyButton from '../../../../../Components/IconOnlyButton.js';
 
 const Option = styled.div`
-    color: #0F172A;
-    width: 405px;
+    outline: none;
+    border-radius: 0px;
+    border: solid #152842 1px;
+    background-color: #D9E2EF;
+    color: #666787;
 `;
 
 function ListElement(props) {
     return (
-        <div className='d-flex flex-row align-items-center'>
-            <Option className='flex-grow-1 py-3'>{props.children}</Option>
-            <div className='d-inline-flex flex-row gap-1'>
-            <IconOnlyButton minWidth='28' icon={<EditIcon/>}/>
-            <IconOnlyButton minWidth='28' icon={<RemoveIcon/>}/></div>
-        </div>
-    );
+            <div className='d-flex flex-row align-items-center align-self-stretch gap-2'>
+                <Option className='flex-grow-1 p-2'>{props.children}</Option>
+                <IconOnlyButton minWidth='28' icon={<EditIcon/>}/>
+                <IconOnlyButton minWidth='28' icon={<RemoveIcon/>}/>
+            </div>
+    )
 }
 
 export default ListElement;
