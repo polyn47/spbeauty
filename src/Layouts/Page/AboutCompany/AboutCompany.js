@@ -3,12 +3,12 @@ import General from "./Components/General/General";
 import Addresses from "./Components/Addresses/Addresses";
 function AboutCompany() {
     return (
-        <div className='d-flex flex-column gap-5 mx-4 px-5 my-5 py-3'>
-            <Heading/> {/* Заголовок и кнопка справа */}
-            <div className='d-inline-flex flex-row gap-5'>
-                <General/>  {/* Основная информация вроде названия, типа и телефона */}
-                <Addresses/> {/* Список доступных адресов заведений */}
-            </div>
+        <div className='col mx-4 my-3 p-5'>
+            <div className='row'><Heading/></div> {/* Заголовок и кнопка справа */}
+            <div className='row'><div className='row'>
+                <div className='col'><General/></div>  {/* Основная информация вроде названия, типа и телефона */}
+                <div className='col'><Addresses/></div>   {/* Список доступных адресов заведений */}
+            </div></div>
         </div>
     );
 }
